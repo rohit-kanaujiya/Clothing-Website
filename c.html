@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Store</title>
+    <link rel="stylesheet" href="c.css">
+</head>
+<body>
+    <header>
+        <h1>Clothing Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" id="cart">Cart (0)</a></li>
+                <li><a href="#" id="login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Men's Clothing Section -->
+        <section class="category">
+            <h2>Men's Clothing</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="shirt1.jpg" alt="Casual Shirt">
+                    <h3>Casual Shirt</h3>
+                    <p>$25.00</p>
+                    <button onclick="addToCart('Casual Shirt', 25)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="shirt2.jpg" alt="Formal Shirt">
+                    <h3>Formal Shirt</h3>
+                    <p>$30.00</p>
+                    <button onclick="addToCart('Formal Shirt', 30)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="jacket1.jpg" alt="Leather Jacket">
+                    <h3>Leather Jacket</h3>
+                    <p>$150.00</p>
+                    <button onclick="addToCart('Leather Jacket', 150)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Women's Clothing Section -->
+        <section class="category">
+            <h2>Women's Clothing</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="dress1.jpg" alt="Summer Dress">
+                    <h3>Summer Dress</h3>
+                    <p>$45.00</p>
+                    <button onclick="addToCart('Summer Dress', 45)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="jacket2.jpg" alt="Denim Jacket">
+                    <h3>Denim Jacket</h3>
+                    <p>$60.00</p>
+                    <button onclick="addToCart('Denim Jacket', 60)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="top1.jpg" alt="Blouse">
+                    <h3>Blouse</h3>
+                    <p>$35.00</p>
+                    <button onclick="addToCart('Blouse', 35)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Accessories Section -->
+        <section class="category">
+            <h2>Accessories</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="watch1.jpg" alt="Watch">
+                    <h3>Luxury Watch</h3>
+                    <p>$200.00</p>
+                    <button onclick="addToCart('Luxury Watch', 200)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="belt1.jpg" alt="Leather Belt">
+                    <h3>Leather Belt</h3>
+                    <p>$40.00</p>
+                    <button onclick="addToCart('Leather Belt', 40)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="hat1.jpg" alt="Stylish Hat">
+                    <h3>Stylish Hat</h3>
+                    <p>$25.00</p>
+                    <button onclick="addToCart('Stylish Hat', 25)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="login()">Login</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Clothing Store. All rights reserved.</p>
+    </footer>
+
+    <script src="c.js"></script>
+</body>
+</html>
